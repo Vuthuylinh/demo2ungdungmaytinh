@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>doitiente</title>
+</head>
+<body>
+<table>
+    <tr>
+    <th> Amount </th>
+        <th> From currency </th>
+        <th> To currency </th>
+    </tr>
+    <tr>
+        <th>
+            <input type="number" name="Amount" id="Amount"/>
+        </th>
+       <th>
+            <select name="dropdown" id="fromcurrency">
+                <option value="VND" selected>VND</option>
+                <option value="USD" selected>USD</option>
+            </select> </th>
+
+           <th> <select name="dropdown" id="tocurrency">
+                <option value="VND" selected>VND</option>
+                <option value="USD" selected>USD</option>
+            </select> </th>
+
+           <th> <input type="button" onclick="exchangeMoney()" name="Convert" value="convert"/></th>
+
+    </tr>
+</table>
+
+
+    <br>
+<br>
+
+ <p id="result"></p>
+<script  src="exchange.js"></script>
+
+</body>
+</html>
